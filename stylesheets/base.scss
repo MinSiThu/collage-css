@@ -1,0 +1,25 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+
+footer{
+    width:100%;
+    display: block;
+    padding:5px 2%;
+}
+
+p{
+    font-size: 12pt;
+    font-family: Roboto;
+}
+
+a{
+    color:map-get($colors,priamry);text-decoration: none;
+    &:hover{
+        color:map-get($colors,secondary);
+    }
+}

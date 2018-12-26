@@ -1,12 +1,13 @@
 //color utils
-$colors:(primary:#643F88,secondary:#345A7A,info:#039BAA,warning:#F7BD00,success:#22CE12,danger:#C10037,);
-@mixin background($color) {
-    background-color:$color;
-    color:white;
+$colors:(primary:#643F88,secondary:#D6D6D6,info:#039BAA,warning:#F7BD00,success:#22CE12,danger:#C10037,);
+@mixin background($colorName,$colorValue) {
+    background-color:$colorValue;
+    @if $colorName==secondary { color:black;}
+    @else {color:white;}
 }
 @each $colorName,$hexValue in $colors{
     .bg-#{$colorName}{
-        @include background($hexValue);
+        @include background($colorName,$hexValue);
     }
 }
 
@@ -21,3 +22,39 @@ $textAlignList: (left center right);
     }
 }
 
+//margin
+$marginValues: (small:9px, medium: 14px, large: 18px);
+@mixin  margin($value) {margin:$value;}
+@mixin marginTop($value) {margin-top: $value;}
+@mixin marginBottom($value) {margin-bottom: $value;}
+@mixin marginLeft($value) {margin-left: $value;}
+@mixin marginRight($value) {margin-right: $value;}
+
+@each $marginName,$marginValue in $marginValues{
+    .margin-#{$marginName}{@include margin($marginValue)}
+    .margin-top-#{$marginName}{@include marginTop($marginValue)}
+    .margin-bottom-#{$marginName}{@include marginBottom($marginValue)}
+    .margin-left-#{$marginName}{@include marginLeft($marginValue)}
+    .margin-right-#{$marginName}{@include marginRight($marginValue)}
+}
+
+//border-radius
+$borderRadiusValues : (small:10px, medium:15px, large:20px);
+@mixin Border{}
+@mixin  BordertopLeft($value){border-top-left-radius: $value;@include Border;}
+@mixin  BordertopRight($value){border-top-right-radius: $value;@include Border;}
+@mixin  BorderbottomLeft($value){border-bottom-left-radius: $value;@include Border;}
+@mixin  BorderbottomRight($value){border-bottom-right-radius: $value;@include Border;}
+@mixin  BorderAll($value){border-radius: $value;@include Border;}
+
+@each $borderType,$borderRadiusValue in $borderRadiusValues{
+    .border-topLeft-#{$borderType}{@include BordertopLeft($borderRadiusValue);}
+    .border-topRight-#{$borderType}{@include BordertopRight($borderRadiusValue);}
+    .border-bottomRight-#{$borderType}{@include BorderbottomRight($borderRadiusValue);}
+    .border-bottomLeft-#{$borderType}{@include BorderbottomLeft($borderRadiusValue);}
+    .border-all-#{$borderType}{@include BorderAll($borderRadiusValue);}
+}
+
+//title
+.title{font-size: 18pt;}
+.subtitle{font-size: 14pt;}

@@ -1,10 +1,38 @@
+/**
+    Collage-Css
+    @creator - Min Si Thu
+    @Liscene - MIT
+    @dateOfCreation - 12/27/2018 12:01AM Myanmar,Mandalay,Amarapura
+    @Contact - archimedes557@gmail.com
+    @facebook - https://www.facebook.com/profile.php?id=100008064318566
+    @github - https://github.com/MinSiThu
+*/
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+html, body {
+  margin: 0;
+  padding: 0; }
+
+footer {
+  width: 100%;
+  display: block;
+  padding: 5px 2%; }
+
+p {
+  font-size: 12pt;
+  font-family: Roboto; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    color: #D6D6D6; }
+
 .bg-primary {
   background-color: #643F88;
   color: white; }
 
 .bg-secondary {
-  background-color: #345A7A;
-  color: white; }
+  background-color: #D6D6D6;
+  color: black; }
 
 .bg-info {
   background-color: #039BAA;
@@ -31,13 +59,110 @@
 .text-right {
   text-align: right; }
 
+.margin-small {
+  margin: 9px; }
+
+.margin-top-small {
+  margin-top: 9px; }
+
+.margin-bottom-small {
+  margin-bottom: 9px; }
+
+.margin-left-small {
+  margin-left: 9px; }
+
+.margin-right-small {
+  margin-right: 9px; }
+
+.margin-medium {
+  margin: 14px; }
+
+.margin-top-medium {
+  margin-top: 14px; }
+
+.margin-bottom-medium {
+  margin-bottom: 14px; }
+
+.margin-left-medium {
+  margin-left: 14px; }
+
+.margin-right-medium {
+  margin-right: 14px; }
+
+.margin-large {
+  margin: 18px; }
+
+.margin-top-large {
+  margin-top: 18px; }
+
+.margin-bottom-large {
+  margin-bottom: 18px; }
+
+.margin-left-large {
+  margin-left: 18px; }
+
+.margin-right-large {
+  margin-right: 18px; }
+
+.border-topLeft-small {
+  border-top-left-radius: 10px; }
+
+.border-topRight-small {
+  border-top-right-radius: 10px; }
+
+.border-bottomRight-small {
+  border-bottom-right-radius: 10px; }
+
+.border-bottomLeft-small {
+  border-bottom-left-radius: 10px; }
+
+.border-all-small {
+  border-radius: 10px; }
+
+.border-topLeft-medium {
+  border-top-left-radius: 15px; }
+
+.border-topRight-medium {
+  border-top-right-radius: 15px; }
+
+.border-bottomRight-medium {
+  border-bottom-right-radius: 15px; }
+
+.border-bottomLeft-medium {
+  border-bottom-left-radius: 15px; }
+
+.border-all-medium {
+  border-radius: 15px; }
+
+.border-topLeft-large {
+  border-top-left-radius: 20px; }
+
+.border-topRight-large {
+  border-top-right-radius: 20px; }
+
+.border-bottomRight-large {
+  border-bottom-right-radius: 20px; }
+
+.border-bottomLeft-large {
+  border-bottom-left-radius: 20px; }
+
+.border-all-large {
+  border-radius: 20px; }
+
+.title {
+  font-size: 18pt; }
+
+.subtitle {
+  font-size: 14pt; }
+
 html, body {
   margin: 0;
   padding: 0; }
 
 .container {
   width: 96%;
-  margin: 10px auto; }
+  margin: 10px auto;
+  display: block; }
 
 .row {
   margin: 0;
