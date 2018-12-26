@@ -1,0 +1,23 @@
+//color utils
+$colors:(primary:#643F88,secondary:#345A7A,info:#039BAA,warning:#F7BD00,success:#22CE12,danger:#C10037,);
+@mixin background($color) {
+    background-color:$color;
+    color:white;
+}
+@each $colorName,$hexValue in $colors{
+    .bg-#{$colorName}{
+        @include background($hexValue);
+    }
+}
+
+//text-align utils
+@mixin align($align) {
+    text-align: $align;
+}
+$textAlignList: (left center right);
+@each $align in $textAlignList {
+    .text-#{$align}{
+       @include align($align);
+    }
+}
+

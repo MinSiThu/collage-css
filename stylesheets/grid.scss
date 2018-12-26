@@ -1,0 +1,60 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width:96%;
+    margin: 10px auto;
+}
+
+.row{
+    margin: 0;
+    padding:0;
+    width:100%;
+    display: flex;
+
+    @for $colNumber from 1 through 12{
+        .col-#{$colNumber}{
+            box-sizing: border-box;
+            padding: 0;
+            margin:0;
+            width: ($colNumber*(100/12))*1%;
+            display: block;
+        }
+    }
+}
+
+//rows margin
+$rowMarginValues : (small:9px, medium:14px, large:18x);
+@mixin rowMargin($key,$value){
+    .row-margin-#{$key}{
+        .row{
+            margin-bottom:$value!important;
+        }
+    }
+}
+
+@each $key,$value in $rowMarginValues{
+    @include rowMargin($key,$value);
+}
+
+//cols margin
+$colMarginValues : (small:9px, medium:14px, large: 18px);
+@mixin colMargin($key,$value) {
+    .col-margin-#{$key}{
+        @for $colNumber from 1 through 12{
+            > .col-#{$colNumber}{
+                margin-left:$value;
+            }
+        }
+    }
+
+    .col-margin-#{$key}{
+        div:first-child{margin-left: 0;}
+    }
+}
+
+@each $key,$value in $colMarginValues{
+    @include colMargin($key,$value);
+}

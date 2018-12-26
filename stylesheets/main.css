@@ -1,0 +1,213 @@
+.bg-primary {
+  background-color: #643F88;
+  color: white; }
+
+.bg-secondary {
+  background-color: #345A7A;
+  color: white; }
+
+.bg-info {
+  background-color: #039BAA;
+  color: white; }
+
+.bg-warning {
+  background-color: #F7BD00;
+  color: white; }
+
+.bg-success {
+  background-color: #22CE12;
+  color: white; }
+
+.bg-danger {
+  background-color: #C10037;
+  color: white; }
+
+.text-left {
+  text-align: left; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+html, body {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  width: 96%;
+  margin: 10px auto; }
+
+.row {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex; }
+  .row .col-1 {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 8.3333333333%;
+    display: block; }
+  .row .col-2 {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 16.6666666667%;
+    display: block; }
+  .row .col-3 {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 25%;
+    display: block; }
+  .row .col-4 {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 33.3333333333%;
+    display: block; }
+  .row .col-5 {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 41.6666666667%;
+    display: block; }
+  .row .col-6 {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    display: block; }
+  .row .col-7 {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 58.3333333333%;
+    display: block; }
+  .row .col-8 {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 66.6666666667%;
+    display: block; }
+  .row .col-9 {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 75%;
+    display: block; }
+  .row .col-10 {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 83.3333333333%;
+    display: block; }
+  .row .col-11 {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 91.6666666667%;
+    display: block; }
+  .row .col-12 {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: block; }
+
+.row-margin-small .row {
+  margin-bottom: 9px !important; }
+
+.row-margin-medium .row {
+  margin-bottom: 14px !important; }
+
+.row-margin-large .row {
+  margin-bottom: 18x !important; }
+
+.col-margin-small > .col-1 {
+  margin-left: 9px; }
+.col-margin-small > .col-2 {
+  margin-left: 9px; }
+.col-margin-small > .col-3 {
+  margin-left: 9px; }
+.col-margin-small > .col-4 {
+  margin-left: 9px; }
+.col-margin-small > .col-5 {
+  margin-left: 9px; }
+.col-margin-small > .col-6 {
+  margin-left: 9px; }
+.col-margin-small > .col-7 {
+  margin-left: 9px; }
+.col-margin-small > .col-8 {
+  margin-left: 9px; }
+.col-margin-small > .col-9 {
+  margin-left: 9px; }
+.col-margin-small > .col-10 {
+  margin-left: 9px; }
+.col-margin-small > .col-11 {
+  margin-left: 9px; }
+.col-margin-small > .col-12 {
+  margin-left: 9px; }
+
+.col-margin-small div:first-child {
+  margin-left: 0; }
+
+.col-margin-medium > .col-1 {
+  margin-left: 14px; }
+.col-margin-medium > .col-2 {
+  margin-left: 14px; }
+.col-margin-medium > .col-3 {
+  margin-left: 14px; }
+.col-margin-medium > .col-4 {
+  margin-left: 14px; }
+.col-margin-medium > .col-5 {
+  margin-left: 14px; }
+.col-margin-medium > .col-6 {
+  margin-left: 14px; }
+.col-margin-medium > .col-7 {
+  margin-left: 14px; }
+.col-margin-medium > .col-8 {
+  margin-left: 14px; }
+.col-margin-medium > .col-9 {
+  margin-left: 14px; }
+.col-margin-medium > .col-10 {
+  margin-left: 14px; }
+.col-margin-medium > .col-11 {
+  margin-left: 14px; }
+.col-margin-medium > .col-12 {
+  margin-left: 14px; }
+
+.col-margin-medium div:first-child {
+  margin-left: 0; }
+
+.col-margin-large > .col-1 {
+  margin-left: 18px; }
+.col-margin-large > .col-2 {
+  margin-left: 18px; }
+.col-margin-large > .col-3 {
+  margin-left: 18px; }
+.col-margin-large > .col-4 {
+  margin-left: 18px; }
+.col-margin-large > .col-5 {
+  margin-left: 18px; }
+.col-margin-large > .col-6 {
+  margin-left: 18px; }
+.col-margin-large > .col-7 {
+  margin-left: 18px; }
+.col-margin-large > .col-8 {
+  margin-left: 18px; }
+.col-margin-large > .col-9 {
+  margin-left: 18px; }
+.col-margin-large > .col-10 {
+  margin-left: 18px; }
+.col-margin-large > .col-11 {
+  margin-left: 18px; }
+.col-margin-large > .col-12 {
+  margin-left: 18px; }
+
+.col-margin-large div:first-child {
+  margin-left: 0; }
+
+/*# sourceMappingURL=main.css.map */
